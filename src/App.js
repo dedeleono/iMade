@@ -1,10 +1,11 @@
 import './App.css';
+import Layout from './containers/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">h</div>
-    </div>
+    <>
+      <Layout />
+    </>
   );
 }
 
