@@ -5,7 +5,7 @@ class Layout extends Component {
     {
         return(
             <>
-                <header>Header</header>
+                <header className="bg-black">Header</header>
                 <main></main>
                 <footer></footer>
             </>
