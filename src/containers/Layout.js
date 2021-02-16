@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from '../components/Navbar/Navbar'
 
 class Layout extends Component {
     render()
@@ -8,7 +9,7 @@ class Layout extends Component {
                 <div className="flex flex-col h-screen min-h-screen">
                     <header className="py-2 bg-gray-700 text-white text-center">
                         <div className="bg-white">
-                            <button className="bg-blue-400 p-2 text-gray-300">Button</button>
+                            <Navbar />
                         </div>
                     </header>
                     <main className="">
