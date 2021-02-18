@@ -1,4 +1,5 @@
 import NavItems from './Navigation_Items/NavItems'
+import SlidingTabs from '../../SlidingTabs'
 
 const Navbar = (props) => {
     return(
@@ -6,8 +7,9 @@ const Navbar = (props) => {
                 <div className="w-4 ml-10">
                     a
                 </div>
-                <div className="w-4 h-50">
-                    <NavItems />
+                <div className="container ">
+                    {/*<NavItems />*/}
+                    <SlidingTabs />
                 </div>
                <div className="mr-2"></div> 
                 <div className="w-4 mr-16">
