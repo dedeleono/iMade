@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function SlidingTabs({
   className = "",
@@ -9,7 +9,7 @@ function SlidingTabs({
   const [activeTab, setActiveTab] = useState(0)
   let finalClass = `${className} w-full flex sm:border-b sm:border-gray-300 relative flex-col sm:flex-row`
   let tabClassName =
-    " flex-1 sm:text-center font-medium pb-3 cursor-pointer hover:text-red-400"
+    " flex-1 sm:text-center font-medium py-5 mt-2 cursor-pointer hover:text-red-400"
   let sliderClassName =
     "hidden sm:block absolute bottom-0 left-0 h-1 bg-red-400 transition-transform duration-300 ease-out"
   const numTabs = tabs.length;
