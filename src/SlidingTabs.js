@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {NavLink} from 'react-router-dom';
 
 function SlidingTabs({
   className = "",
@@ -6,7 +7,7 @@ function SlidingTabs({
   onChange = () => {},
   ...newProps
 }) {
-  const [activeTab, setActiveTab] = useState(0)
+  const [activeTab, setActiveTab] = useState()
   let finalClass = `${className} w-full flex sm:border-b sm:border-gray-300 relative flex-col sm:flex-row`
   let tabClassName =
     " flex-1 sm:text-center font-medium py-5 mt-2 cursor-pointer hover:text-red-400"
@@ -21,7 +22,7 @@ function SlidingTabs({
   if (activeTab === 0) sliderClassName += " transform translate-x-0";
   else if (activeTab === 1) sliderClassName += " transform translate-x-full"
   else if (activeTab === 2) sliderClassName += " transform translate-x-double"
-  else if (activeTab === 3) sliderClassName += " transform translate-x-triple"
+  /*else if (activeTab === 3) sliderClassName += " transform translate-x-triple"*/
 /*  else if (activeTab === 4) sliderClassName += " transform translate-x-quad"*/
   const AllTabs = tabs.map((t, index) => {
     const isObject = typeof t === "object"
@@ -29,7 +30,8 @@ function SlidingTabs({
     let value = isObject ? t.value : t
     let icon = isObject ? t.icon : null
     return (
-      <div
+      <NavLink
+        to = {newProps.link}
         key={`${value}-${index}`}
         className={`${tabClassName} ${activeTab === index && "text-red-400"}`}
         onClick={() => {
@@ -37,13 +39,9 @@ function SlidingTabs({
           onChange(value)
         }}
       >
-        {icon && (
-          <div className="w-6 sm:w-auto inline-block">
-            {React.cloneElement(icon, { className: "mr-2" })}
-          </div>
-        )}
+
         {name}
-      </div>
+      </NavLink>
     )
   })
   return (

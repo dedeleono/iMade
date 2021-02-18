@@ -7,11 +7,11 @@ class Layout extends Component {
         return(
             <>
                 <div className="flex flex-col h-screen min-h-screen">
-                    <header className="py-2 bg-white text-center shadow z-10 h-20">
+                    <header className="py-2 bg-white text-center shadow-md z-20 h-20">
                             <Navbar />
                     </header>
                     <main className="">
-                        <div className="bg-gray-200 flex-1 overflow-y-auto">center
+                        <div className="bg-gray-200 flex-1 overflow-y-auto h-screen">center
                         <ul>
                             <li>p</li>
                             <li>p</li>
@@ -19,7 +19,7 @@ class Layout extends Component {
                         </ul>
                         </div>
                     </main>
-                    <footer className="p-5 h-10 bg-blue-500 flex-none"></footer>
+                    <footer className=""></footer>
                 </div>
             </>
         )
