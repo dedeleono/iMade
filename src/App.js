@@ -1,5 +1,10 @@
 import './App.css';
 import Layout from './containers/Layout';
+import Shop from './components/Shop/Shop';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import NotFound from './components/404/NotFound';
+import Landing from './components/Landing/Landing';
 import { Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -7,11 +12,11 @@ function App() {
     <>
       <Layout>
         <Switch>
-          <Route path component>Landing</Route>
-          <Route path component>404</Route>
-          <Route path component>About/Instagram</Route>
-          <Route path component>Contact</Route>
-          <Route path component>Shop</Route>
+          <Route component={NotFound}>404</Route>
+          <Route path="/landing" component={Landing}>Landing</Route>
+          <Route path="/about" component={About}>About/Instagram</Route>
+          <Route path="/contact" component={Contact}>Contact</Route>
+          <Route path="/" exact component={Shop}>Shop</Route>
         </Switch>
       </Layout>
     </>

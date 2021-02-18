@@ -12,7 +12,7 @@ class Layout extends Component {
                     </header>
                     <main className="overflow-y-auto">
                         <div className="bg-gray-200 flex-1 overflow-y-auto h-screen">
-                            
+                            {this.props.children}
                         </div>
                     </main>
                     <footer className=""></footer>
