@@ -11,7 +11,7 @@ class Layout extends Component {
                             <Navbar />
                     </header>
                     <main className="overflow-y-auto">
-                        <div className="bg-gray-200 flex-1 overflow-y-auto h-screen">
+                        <div className="bg-gray-200 flex-1 overflow-y-auto h-screen transition duration-500 ease-out">
                             {this.props.children}
                         </div>
                     </main>
