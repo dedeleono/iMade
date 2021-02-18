@@ -11,12 +11,8 @@ class Layout extends Component {
                             <Navbar />
                     </header>
                     <main className="overflow-y-auto">
-                        <div className="bg-gray-200 flex-1 overflow-y-auto h-screen">center
-                        <ul>
-                            <li>p</li>
-                            <li>p</li>
-                            <li>p</li>
-                        </ul>
+                        <div className="bg-gray-200 flex-1 overflow-y-auto h-screen">
+                            
                         </div>
                     </main>
                     <footer className=""></footer>
