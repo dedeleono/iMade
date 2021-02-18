@@ -1,4 +1,4 @@
-import SlidingTabs from '../../SlidingTabs'
+import Tabs from './Navigation_Items/Tabs'
 
 const Navbar = (props) => {
     return(
@@ -7,8 +7,8 @@ const Navbar = (props) => {
                     a
             </div>
             <div className="container ">
-                    {/*<NavItems />*/}
-                    <SlidingTabs/>
+                    {/*<NavItems /> <SlidingTabs/>*/}
+                    <Tabs color='red'/>
             </div>
             <div className="mr-2 py-5"></div> 
             <div className="w-4 mr-16 py-5">
@@ -20,5 +20,3 @@ const Navbar = (props) => {
 }
 
 export default Navbar;
-
-        {/*<NavTripleMenu/> */}

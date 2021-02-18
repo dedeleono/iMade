@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 const NavItem = (props) => {
     return(
-        <li className="pr-4">
-            <Link to={props.link} exact activeClassName="" className="hover:bg-red-700 hover:bg-opacity-25 hover:border-b-4 hover:border-red-700 py-2.5 px-4 hover:text-white">{props.children}</NavLink>
+        <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            <NavLink to={props.link} exact activeClassName={"text-white bg-" + props.color + "-600"} className={"text-xs font-bold uppercase px-5 py-3 shadow rounded block leading-normal text-" + props.color + "-600 bg-white"}>{props.children}</NavLink>
         </li>
     )
 }
