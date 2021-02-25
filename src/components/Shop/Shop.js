@@ -1,6 +1,13 @@
+import Product from './Product'
+
 const Shop = (props) => {
+
     return(
-        <div>Shop</div>
+        <>
+        <div className="container mx-auto inline-block">
+            <Product />
+        </div>
+        </>
     )
 }
 
