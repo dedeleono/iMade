@@ -4,7 +4,12 @@ const Shop = (props) => {
 
     return(
         <>
-        <div className="container mx-auto inline-block">
+        <div className="flex flex-wrap container-fluid flex-row justify-around">
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
             <Product />
         </div>
         </>
