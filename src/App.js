@@ -16,7 +16,7 @@ function App() {
           <Redirect to="/404" />*/}
           <Route path="/landing" component={Landing}>Landing</Route>
           <Route path="/about" component={About}>About/Instagram</Route>
-          <Route path="/contact" component={Contact}>Contact</Route>
+          <Route path="/contact" component={Contact}/>
           <Route path="/" exact={true} component={Shop}/>
         </Switch>
       </Layout>
