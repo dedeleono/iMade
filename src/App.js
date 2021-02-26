@@ -15,7 +15,7 @@ function App() {
           {/*<Route path='/404' component={NotFound} />
           <Redirect to="/404" />*/}
           <Route path="/landing" component={Landing}>Landing</Route>
-          <Route path="/about" component={About}/>
+          <Route path="/about" component={NotFound}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/" exact={true} component={Shop}/>
         </Switch>
