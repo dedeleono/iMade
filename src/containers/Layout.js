@@ -4,10 +4,6 @@ import Navbar from '../components/Navbar/Navbar'
 class Layout extends Component {
     render()
     {
-        /*let bg = {
-            backgroundColor: '#e1e8e2',
-            backgroundImage: 'url("https://www.transparenttextures.com/patterns/diagonales-decalees.png")',
-        }*/
         return(
             <>
                 <div className="flex flex-col h-screen min-h-screen">
@@ -19,7 +15,7 @@ class Layout extends Component {
                             {this.props.children}
                         </div>
                     </main>
-                    <footer className="flex flex-col min-h-100 text-white bg-gray-800 items-center">this is footer</footer>
+                    <footer className="flex flex-col py-2 min-h-100 text-white bg-gray-800 items-center">© i-Made</footer>
                 </div>
             </>
         )
