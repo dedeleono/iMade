@@ -1,5 +1,4 @@
-import "./components/FontAwesomeIcons"
-import './App.css';
+/*import './App.css';*/
 import Layout from './containers/Layout';
 import Shop from './components/Shop/Shop';
 import About from './components/About/About';
