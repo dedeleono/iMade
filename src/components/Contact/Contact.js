@@ -1,5 +1,7 @@
 import ContactForm from './contactForm/ContactForm';
-import ContactInfo from './contactInfo/ContactInfo'
+import ContactInfo from './contactInfo/ContactInfo';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = (props) => {
     
@@ -17,9 +19,9 @@ const Contact = (props) => {
                                 <p class="text-normal text-lg sm:text-sm font-medium text-gray-200 mt-2">
                                     Fill in the form to start a conversation
                                 </p>
+                            <ContactInfo iconn={faInstagram} text={"imade.gt"}/>
+                            <ContactInfo iconn={faEnvelope} text={"i-made@gmail.com"}/>
                             </div>
-                            <ContactInfo text={"imade.gt"}/>
-                            <ContactInfo text={"i-made@gmail.com"}/>
                             <ContactForm/>                            
                         </div>
                     </div>
