@@ -5,10 +5,6 @@ import { NavLink } from 'react-router-dom'
 
 const NotFound = (props) => {
     
-    /*const onClick (event) => {
-
-    }*/
-    
     return(
         <>
             <div class="h-screen w-screen bg-gray-100 flex items-center">
