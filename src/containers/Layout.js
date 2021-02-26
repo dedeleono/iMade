@@ -4,6 +4,10 @@ import Navbar from '../components/Navbar/Navbar'
 class Layout extends Component {
     render()
     {
+        /*let bg = {
+            backgroundColor: '#e1e8e2',
+            backgroundImage: 'url("https://www.transparenttextures.com/patterns/diagonales-decalees.png")',
+        }*/
         return(
             <>
                 <div className="flex flex-col h-screen min-h-screen">

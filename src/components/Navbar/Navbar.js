@@ -14,7 +14,7 @@ const Navbar = (props) => {
             </div>
             <div className="mr-2 py-5"></div> 
             <div className="w-auto mx-7 py-4">
-                <FontAwesomeIcon icon={faShoppingCart} size="2x"/>
+                <FontAwesomeIcon icon={faShoppingCart} color="gray" size="2x"/>
             </div>
         </div>
 
