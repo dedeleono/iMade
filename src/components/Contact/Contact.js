@@ -7,7 +7,7 @@ const Contact = (props) => {
     
     return(
         <>
-        <div class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 pb-20">
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
                 <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <div class=" overflow-hidden">
                         <div class="grid grid-cols-1 md:grid-cols-2 sm:rounded-lg bg-white">
