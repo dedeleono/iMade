@@ -10,8 +10,8 @@ const Contact = (props) => {
         <div class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
                 <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <div class=" overflow-hidden">
-                        <div class="grid grid-cols-1 md:grid-cols-2 sm:rounded-lg bg-white">
-                            <div class="p-6 mr-2 bg-red-500 sm:rounded-lg mx-1 my-1">
+                        <div class="grid grid-cols-1 md:grid-cols-2 sm:rounded-3xl bg-white">
+                            <div class="p-6 mr-2 bg-red-500 sm:rounded-3xl mx-1 my-1">
                                 <h1 class="text-4xl sm:text-5xl text-white font-extrabold tracking-tight">
                                     Get in touch
                                 </h1>

@@ -1,11 +1,13 @@
+import img from './productImg/corinto.jpeg'
+
 const Product = (props) => {
     
     let sty = {
-        backgroundImage: "url(https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)",
+        backgroundImage: img,
     }
 
     return(
-        <div class="flex  flex-col w-1/3 justify-start items-center max-w-sm mx-1 my-8">
+        <div class="flex flex-col w-1/3 justify-start items-center max-w-sm mx-1 my-8">
             <div style={sty} class="bg-gray-300 h-48 w-full rounded-lg shadow-md bg-cover bg-center"></div>
             <div class="w-56 md:w-48 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
                 <div class="py-2 text-center font-bold uppercase tracking-wide text-red-800">Pink</div>
@@ -19,3 +21,4 @@ const Product = (props) => {
 }
 
 export default Product;
+/*"url(https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)"*/
