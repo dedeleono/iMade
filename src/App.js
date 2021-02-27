@@ -12,8 +12,8 @@ function App() {
     <>
       <Layout>
         <Switch>
-          <Route path="/landing" component={About}>Landing</Route>
-          <Route path="/about" component={Landing}/>
+          <Route path="/landing" component={Landing}>Landing</Route>
+          <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/" exact={true} component={Shop}/>
           <Route path="/*" component={NotFound} />
