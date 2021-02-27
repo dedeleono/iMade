@@ -15,7 +15,7 @@ class Layout extends Component {
                             {this.props.children}
                         </div>
                     </main>
-                    <footer className="flex flex-col py-2 min-h-100 text-white bg-gray-800 items-center">© i-Made</footer>
+                    <footer className="flex flex-col py-3 min-h-100 text-white bg-gray-800 items-center">© i-Made</footer>
                 </div>
             </>
         )
