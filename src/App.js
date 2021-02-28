@@ -12,7 +12,7 @@ function App() {
     <>
       <Layout>
         <Switch>
-          <Route path="/landing" component={Landing}>Landing</Route>
+          <Route path="/landing" component={Landing}/>
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/" exact={true} component={Shop}/>
