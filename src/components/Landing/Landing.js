@@ -7,10 +7,10 @@ const Landing = (props) => {
     return(
         <>
             <div className="container w-full h-2/3 my-10 flex flex-row z-10 rounded-3xl shadow-md">
-                <div className={`flex flex-1 rounded-3xl ${styles.slider} slider`}>
+                <div className="flex flex-1 rounded-3xl slider w-2/3">
                     slider
                 </div>
-                <div className="flex flex-1 px-10">Logo</div>
+                <div className="flex flex-1 container w-1/3"><img src={img} alt="" className="object-contain rounded-3xl"/></div>
             </div>
         </>
     )
